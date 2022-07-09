@@ -49,9 +49,9 @@ h2 {
   height: 480px;
   box-shadow: 8px 8px 5px #888;
 }
-a{
+footer a{
     text-decoration: none;
 }
-a:hover {
+footer a:hover {
     color: #198754 !important;
 }
