@@ -1,12 +1,56 @@
-var map = L.map("map").setView([-34.9768211, -67.6886061], 19);
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  attribution:
-    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-}).addTo(map);
+ // Initialize AOS Animations
+    AOS.init({
+      duration: 1200,
+      once: true,
+      offset: 100,
+      easing: 'ease-out-cubic'
+    });
 
-L.marker([-34.9769211, -67.6886261])
-  .addTo(map)
-  .bindPopup("Estudio Jurídico.<br>Gisela Durán.<br>Zamenoff 52")
-  .openPopup();
+    // Cookies (as requested)
+    document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
+    document.cookie = 'same-site-cookie=foo; SameSite=Strict';
 
-console.log(`%cFeliz Cumpleaños Giiyoo!!! :-)`,"color:#00f;background:#000;padding:50px;border:3px solid #00f;font-family:Lobster")
+    // Mobile menu toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    
+    mobileToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      mobileToggle.innerHTML = navLinks.classList.contains('active') 
+        ? '<i class="fas fa-times"></i>' 
+        : '<i class="fas fa-bars"></i>';
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+      });
+    });
+    
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Re-trigger AOS on resize for better mobile experience
+    window.addEventListener('resize', () => {
+      AOS.refresh();
+    });
