@@ -1,213 +1,306 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Estudio jurídico en General Alvear Mendoza, con responsabilidad y justicia a favor de defender los derechos de las personas, familias, empresas, comercios que lo necesiten, seguridad y tranquilidad al momento de actuar y conciliar de la mejor forma a nuestros clientes">
-  <link rel="shortcut icon" href="img/logotipo.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dra. Gisela Durán | Estudio Jurídico</title>
+  <link rel="shortcut icon" href="img/logotipo.ico" type="image/x-icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"/>
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-  crossorigin=""/>
   <meta name="google-site-verification" content="09LbKZ4WbniuIKZmDP2IQHSs3KvkPfd656wJqMrPw5k" />
-  <title>Abogada Gisela Durán</title>
+  <meta name="keywords" content="Abogada Gisela Durán, Estudio Jurídico, Derecho de Familia, Derecho Civil, Derecho Laboral, Derecho Comercial, Asesoramiento Legal, General Alvear, Mendoza" />
+  <meta name="description" content="Estudio Jurídico de la Dra. Gisela Durán. Asesoramiento legal integral en derecho de familia, civil, laboral y comercial. Compromiso, experiencia y dedicación en cada caso." /> 
 </head>
 <body>
-   <!--Navbar-->
-  <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
-    <div class="container-fluid">
-      <img src="img/DG3.png" alt="justicia" class="rounded ms-5 logo-dg" style="height: 70px;" class="navbar-brand">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+
+  <!-- Header -->
+  <header id="header">
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <!-- <i class="fas fa-balance-scale"></i> -->
+        <i>
+<img src="img/DG3.png" alt="logo" class="logo-img">
+        </i>
+        Dra. Gisela Durán
+      </a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menú">
+        <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link btn btn-outline-danger text-light mx-1 fw-bold" aria-current="page" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-outline-danger text-light mx-1 fw-bold" href="#derecho">Derechos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-outline-danger text-light mx-1 fw-bold" href="#ubicacion">Ubicación</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-outline-danger text-light mx-1 fw-bold" href="#contacto">Contacto</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="active">Inicio</a></li>
+        <li><a href="#areas">Áreas</a></li>
+        <!-- <li><a href="#sobre-mi">Sobre Mí</a></li> -->
+        <li><a href="#contacto">Contacto</a></li>
+        <li>
+          <a href="https://wa.me/542625541526?text=Hola%20Dra.%20Gisela,%20quisiera%20consultar%20sobre..." 
+             class="nav-whatsapp" 
+             target="_blank"
+             aria-label="Consultar por WhatsApp">
+            <i class="fab fa-whatsapp"></i> Consultar
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
+      <h1>Estudio Jurídico Dra. Gisela Durán</h1>
+      <p class="hero-subtitle">Compromiso, experiencia y dedicación en cada caso</p>
+      <p>Asesoramiento legal integral con un enfoque humano y estratégico para proteger tus derechos y los de tu familia.</p>
+      <a href="https://wa.me/542625541526?text=Hola%20Dra.%20Gisela,%20quisiera%20agendar%20una%20consulta" 
+         class="btn btn-whatsapp" 
+         target="_blank">
+        <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+      </a>
+      <a href="#areas" class="btn btn-outline">Nuestras Áreas</a>
     </div>
-  </nav>
-  <!--Fin Navbar-->
-  <!--Carrusel-->
-  <div class="background">
-    <div class="bg-secondary mb-3">
-      <div class="container mt-5">
-        <div id="intro" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button data-bs-target="#intro" data-bs-slide-to="0" class="active"></button>
-            <button data-bs-target="#intro" data-bs-slide-to="1"></button>
-            <button data-bs-target="#intro" data-bs-slide-to="2"></button>
-            <button data-bs-target="#intro" data-bs-slide-to="3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="carousel-caption">
-                <h2 class="text-danger fs-2 mb-4 fst-italic">DERECHO DE FAMILIA</h2>
-              </div>
-              <img src="img/01-discusion-familiar.jpg" alt="discusion familiar" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-caption">
-                <h2 class="text-danger fs-2 mb-4 fst-italic">DERECHO CIVIL</h2>
-              </div>
-              <img src="img/02-accidente-de-transito.jpg" alt="accidente de transito" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-caption">
-                <h2 class="text-danger fs-2 mb-4 fst-italic">DERECHO LABORAL</h2>
-              </div>
-              <img src="img/03-maltrato-laboral.jpg" alt="maltrato laboral" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-caption">
-                <h2 class="text-danger fs-2 mb-4 fst-italic">DERECHO COMERCIAL</h2>
-              </div>
-              <img src="img/04-derecho-comercial.jpg" alt="derecho comercial sociedades" class="d-block w-100">
-            </div>
-          </div>
-          <button class="carousel-control-prev" data-bs-target="#intro" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" data-bs-target="#intro" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
-        </div>
-      </div>
-      <hr class="container-fluid">
-    </div>
-    <!--Fin Carrusel-->
-    <div class="container-fluid">
-      <img src="img/logo1.2.png" class="mx-auto my-4 d-flex img-fluid" alt="logo gisela duran">
-      <div id="derecho"></div>
-      <h2 class="text-center h1 text-dark">Dra. Gisela Durán</h2>
-      <div class="bg-1"></div>
-      <div class="bg-2"></div>
-      <h1 class="text-center text-light">ESTUDIO<br>JURIDICO<span style="display: none;"> Abogada Gisela Duran</span>
-      </h1>
-      <div class="bg-1"></div>
-    </div>
-    <!--Card-->
+  </section>
+
+  <!-- Áreas de Práctica -->
+  <section id="areas">
     <div class="container">
-      <div class="card bg-secondary text-light mb-3 shadow-lg p-3 mt-5 mb-5" data-aos="zoom-in-right">
-        <h4 class="card-header">
-          DERECHO DE FAMILIA
-        </h4>
-        <div class="card-body">
-          <h5 class="card-title">Alimentos. Divorcios. Régimen de visita. Liquidación y Adjudicación de bienes de la
-            Sociedad Conyugal. Nulidad del matrimonio. Tenencia de hijos. Violencia de género. Restricción de
-            perímetros. Privación de contacto con su hijo.</h5>
-        </div>
+      <div class="section-title" data-aos="fade-up">
+        <h2>Áreas de Práctica</h2>
+        <p>Soluciones legales especializadas adaptadas a tus necesidades</p>
       </div>
-      <div class="card bg-danger text-light mb-3 shadow-lg p-3 mb-5" data-aos="zoom-in-left">
-        <h4 class="card-header">
-          DERECHO CIVIL
-        </h4>
-        <div class="card-body">
-          <h5 class="card-title">Accidentes de tránsito. Mala praxis. Asesoramiento Integral Pre y Post Contractual. Ejecuciones hipotecarias. Ejecución de Incumplimientos Contractuales: alquileres, desalojos, usurpaciones. Daños provocados por vecinos.</h5>
+      
+      <div class="areas-grid">
+        <!-- Familia -->
+        <div class="area-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="area-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3>Derecho de Familia</h3>
+          <ul>
+            <li>Alimentos y cuota alimentaria</li>
+            <li>Divorcios y separaciones</li>
+            <li>Régimen de visita y tenencia</li>
+            <li>Liquidación de sociedad conyugal</li>
+            <li>Nulidad matrimonial</li>
+            <li>Violencia de género</li>
+            <li>Restricción de perímetros</li>
+            <li>Privación de contacto</li>
+          </ul>
         </div>
-      </div>
-      <div class="card bg-secondary text-light mb-3 shadow-lg p-3 mb-5" data-aos="zoom-in-right">
-        <h4 class="card-header">
-          DERECHO LABORAL
-        </h4>
-        <div class="card-body">
-          <h5 class="card-title">Trabajo en negro. Trabajo parcialmente registrado. Asesoramiento jurídico a Empresas.
-            Conciliación Laboral. Convenios colectivos de trabajo. Discriminación. Acoso. Despidos.
-            Indemnizaciones. Cargas sociales.</h5>
+
+        <!-- Civil -->
+        <div class="area-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="area-icon">
+            <i class="fas fa-gavel"></i>
+          </div>
+          <h3>Derecho Civil</h3>
+          <ul>
+            <li>Accidentes de tránsito</li>
+            <li>Mala praxis profesional</li>
+            <li>Asesoramiento pre y post contractual</li>
+            <li>Ejecuciones hipotecarias</li>
+            <li>Incumplimientos contractuales</li>
+            <li>Desalojos y usurpaciones</li>
+            <li>Daños entre vecinos</li>
+          </ul>
         </div>
-      </div>
-      <div class="card bg-danger text-light mb-3 shadow-lg p-3 mb-5" data-aos="zoom-in-left">
-        <h4 class="card-header">
-          DERECHO COMERCIAL
-        </h4>
-        <div class="card-body">
-          <h5 class="card-title">Asistencia integral en materia societaria. Constitución de sociedades. Compraventa acciones/ sociedades. Conflictos entre socios/accionistas. Fusiones y Adquisiciones. Concursos preventivos y quiebras</h5>
+
+        <!-- Laboral -->
+        <div class="area-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="area-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3>Derecho Laboral</h3>
+          <ul>
+            <li>Trabajo en negro / no registrado</li>
+            <li>Asesoramiento a empresas</li>
+            <li>Conciliaciones laborales</li>
+            <li>Convenios colectivos de trabajo</li>
+            <li>Discriminación y acoso laboral</li>
+            <li>Despidos e indemnizaciones</li>
+            <li>Cargas sociales</li>
+          </ul>
         </div>
-        <div id="ubicacion"></div>
+
+        <!-- Comercial -->
+        <div class="area-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="area-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3>Derecho Comercial</h3>
+          <ul>
+            <li>Constitución de sociedades</li>
+            <li>Compraventa de acciones</li>
+            <li>Conflictos entre socios</li>
+            <li>Fusiones y adquisiciones</li>
+            <li>Concursos preventivos</li>
+            <li>Quiebras y reorganizaciones</li>
+            <li>Asistencia societaria integral</li>
+          </ul>
+        </div>
+
+        <!-- Penal (NUEVO) -->
+        <div class="area-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="area-icon">
+            <i class="fas fa-handcuffs"></i>
+          </div>
+          <h3>Derecho Penal</h3>
+          <ul>
+            <li>Defensa en causas penales</li>
+            <li>Asistencia en detenciones</li>
+            <li>Habeas corpus y libertades</li>
+            <li>Delitos contra las personas</li>
+            <li>Delitos económicos y financieros</li>
+            <li>Violencia familiar penal</li>
+            <li>Recursos y apelaciones</li>
+            <li>Asesoramiento preventivo</li>
+          </ul>
+        </div>
       </div>
     </div>
-    <!--Fin Card-->
-    <h3 class="container text-center fw-bold fs-1 text-decoration-underline mt-5 text-danger fst-italic">Ubicación</h3>
-    <!--Google map-->
-    <hr class="container w-50">
-  <div id="map"class="container w-75 rounded"data-aos="zoom-in-up" ></div>     
-   </div>
-    <hr class="container w-50">
-    <!--Bg svg-->
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-100 pb-0 mb-0" version="1.1"
-      xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1425" height="90"
-      preserveAspectRatio="none" viewBox="0 0 1425 90">
-      <g mask="url(&quot;#SvgjsMask1223&quot;)" fill="none">
-        <path d="M 0,36 C 142.6,46.4 428,93 713,88 C 998,83 1282.6,26.4 1425,11L1425 90L0 90z"
-          fill="rgba(108, 117, 125, 1)"></path>
-      </g>
-      <defs>
-        <mask id="SvgjsMask1223">
-          <rect width="1425" height="90" fill="#ffffff"></rect>
-        </mask>
-      </defs>
-    </svg>
-  </div>
-  <!--Footer-->
-  <footer class="container-fluid pt-0">
-    <div class="row bg-secondary">
-      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-        <h3 class="col-12 d-flex justify-content-center fw-bold fs-1 text-light text-decoration-underline pt-2 fst-italic"
-          id="contacto">Contacto</h3>
-        <div class="contacto">
-          <div class="text-center text-light col-12 fs-3 mt-3">
-           <a href="https://wa.me/542625541526?text=Hola,%20quisiera%20hacer%20una%20consulta." class="fst-italic text-light"><i class="bi bi-whatsapp me-2 text-success"></i>2625-541526</a>
-          </div>
-          <div class="text-center text-light col-12 fs-3">
-            <a class="fst-italic text-light" href="mailto:giseladuran76@gmail.com"><i class="bi bi-envelope me-2 text-danger"></i>giseladuran76@gmail.com</a>
-          </div>
-          <div class="text-center text-light fs-3">
-            <p class="fst-italic"><i class="bi bi-geo-alt me-2 text-primary"></i>Zamenof N°52, Gral. Alvear, Mza.</p>
+  </section>
+
+  <!-- Sobre Mí -->
+  <!-- <section class="about" id="sobre-mi">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text" data-aos="fade-right" data-aos-duration="1000">
+          <h3>Dra. Gisela Durán</h3>
+          <p>Abogada egresada de la Universidad de Buenos Aires con más de 15 años de experiencia en el ejercicio profesional del derecho.</p>
+          <p>Mi enfoque se centra en brindar un asesoramiento jurídico personalizado, ético y estratégico, priorizando siempre los intereses y el bienestar de mis clientes.</p>
+          <p>Creo firmemente en la comunicación clara y constante como pilar fundamental para construir relaciones de confianza y lograr los mejores resultados en cada caso.</p>
+          
+          <div class="about-stats">
+            <div class="stat" data-aos="zoom-in" data-aos-delay="100">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Años de Experiencia</span>
+            </div>
+            <div class="stat" data-aos="zoom-in" data-aos-delay="200">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Casos Resueltos</span>
+            </div>
           </div>
         </div>
-        <!-- <div class="text-center text-danger col-12 fs-3 fw-bold"><p>Puede contar con mi profesionalismo, dedicación, responsabilidad de asesoramiento, orientación y la mejor representación a mis clientes en asuntos legales de diferentes índoles para ser su abogada de confianza.</p></div> -->
+        <div class="about-image" data-aos="fade-left" data-aos-duration="1000">
+          <div style="background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 12px; height: 350px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.1rem; text-align: center; padding: 1rem; box-shadow: var(--shadow-lg);">
+            <div>
+              <i class="fas fa-user-tie" style="font-size: 4rem; margin-bottom: 1rem; display: block;"></i>
+              <strong>Foto Profesional</strong><br>
+              <small style="opacity: 0.9;">(Espacio para imagen)</small>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </section> -->
+
+  <!-- Contacto -->
+  <section id="contacto">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Contacto</h2>
+        <p>Agendá tu consulta. Estoy para ayudarte.</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item" data-aos="fade-right" data-aos-delay="100">
+             <!--   <i class="fas fa-map-marker-alt"></i>
+         <div>
+              <h4>Ubicación</h4>
+              <p>Zamenhoff 52, Ciudad Autónoma de Buenos Aires</p>
+            </div>
+          </div>
+          
+          <div class="contact-item" data-aos="fade-right" data-aos-delay="200">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Teléfono</h4>
+              <a href="tel:+542625541526">+542625541526</a>
+            </div>
+          </div>
+          
+          <div class="contact-item" data-aos="fade-right" data-aos-delay="300">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:contacto@abogadagiseladuran.com">contacto@abogadagiseladuran.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-item" data-aos="fade-right" data-aos-delay="400">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Horarios de Atención</h4>
+              <p>Lunes a Viernes: 9:00 - 18:00 hs<br>Sábados: Con turno previo</p>
+            </div>
+          </div>
+        </div>
+         -->
+        <!-- WhatsApp CTA Box -->
+        <div class="whatsapp-cta" data-aos="fade-left" data-aos-duration="1000">
+          <h3><i class="fab fa-whatsapp"></i> Consultá por WhatsApp</h3>
+          <p>Respuesta rápida y personalizada. Escribime directamente y coordinamos tu consulta.</p>
+          <a href="https://wa.me/542625541526?text=Hola%20Dra.%20Gisela,%20quisiera%20consultar%20sobre%20un%20caso%20legal..." 
+             class="btn-whatsapp-large" 
+             target="_blank">
+            <i class="fab fa-whatsapp"></i> Enviar Mensaje Ahora
+          </a>
+          <!-- <span class="whatsapp-number">giseladuran76@gmail.com</span> -->
+      
+        </div>
+      </div>
+      
+      <!-- Mapa -->
+      <!-- <div class="map-container" data-aos="fade-up" data-aos-delay="200">
+        <div>
+          <i class="fas fa-map-marked-alt" style="font-size: 2rem; margin-bottom: 0.5rem; display: block;"></i>
+          <p><strong>Ubicación del Estudio</strong><br><small>Zamenhoff 52, CABA</small></p>
+          <small style="opacity: 0.8;">(Próximamente: mapa interactivo)</small>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <span class="footer-logo">Dra. Gisela Durán</span>
+      <p>Estudio Jurídico • Asesoramiento Legal Integral</p>
+      
+      <div class="footer-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#areas">Áreas de Práctica</a>
+        <!-- <a href="#sobre-mi">Sobre Mí</a> -->
+        <a href="#contacto">Contacto</a>
+        <!-- <a href="#">Política de Privacidad</a> -->
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2026 Estudio Jurídico Dra. Gisela Durán. Todos los derechos reservados.</p>
+      </div>
+    </div>
   </footer>
-  <!--Fin de footer-->
-  <!--Js Mapa-->
-  <script
-    src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""
-  ></script>
-  <!--Mi script-->
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/542625541526?text=Hola%20Dra.%20Gisela,%20quisiera%20realizar%20una%20consulta%20legal..." 
+     class="whatsapp-float" 
+     target="_blank" 
+     aria-label="Consultar por WhatsApp"
+     title="Consultar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">¡Consultame aquí!</span>
+  </a>
+
+  <!-- AOS Library -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  
+
   <script src="js/main.js"></script>
-  <!--Js Bootstrap-->
-  <script src="js/bootstrap.min.js"></script>
-  <!--Js Animacion-->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1500,
-      once: true
-    });
-  </script>
-  <script>
-    document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
-    document.cookie = 'same-site-cookie=foo; SameSite=Strict';
-  </script>
 </body>
 </html>
